@@ -1,6 +1,6 @@
 
 logging:
-  config: file:/apps/dkargo/platform/dkargo-mod-be/config/log4j2-local.yml #log4j2.yml 파일의 경로
+#  config: file:/apps/dkargo/platform/dkargo-mod-be/config/log4j2-local.yml #log4j2.yml 파일의 경로
   # config: classpath:log4j2-local.yml # resources 하위의 경우
 
 api-log:
