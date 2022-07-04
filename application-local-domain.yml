@@ -1,0 +1,33 @@
+#domain
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    platform: org.hibernate.dialect.MariaDB103Dialect
+    url: jdbc:log4jdbc:mariadb://192.168.10.38:3425/mod
+    username: dkargo
+    password: dkargo13579*
+    hikari:
+      minimum-idle: 5
+      max-lifetime: 60000
+      idle-timeout: 45000
+      maximum-pool-size: 70
+      connection-init-sql: SET TIME_ZONE = '+09:00'
+      connection-test-query: SELECT 1
+  output:
+    ansi:
+      enabled: ALWAYS # 로그 알록달록 예쁘게 나오게 설정
+  rabbitmq:
+    host: 127.0.0.1
+    port: 15672
+    username: guest
+    password: guest
+  test: 5
