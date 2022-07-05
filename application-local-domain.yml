@@ -30,4 +30,4 @@ spring:
     port: 5672
     username: guest
     password: guest
-  test: 5
+  test: 7
