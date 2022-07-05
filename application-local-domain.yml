@@ -26,9 +26,9 @@ spring:
     ansi:
       enabled: ALWAYS # 로그 알록달록 예쁘게 나오게 설정
   rabbitmq:
-    host: '{cipher}5f923b3ba0d5676d831c78e459b44d0025e90ec9d8407e86795a7da3f6632181'
-    port: '{cipher}dbf5e1b3e4e0031b448d7aad539546ac9d40d163201093aaa809d97ac7f7d7c2'
-    username: '{cipher}db177f96abbac40d66482c84250e9092453ba00d458b08730135398a85559da3'
-    password: '{cipher}db177f96abbac40d66482c84250e9092453ba00d458b08730135398a85559da3'
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 test: 5
 
