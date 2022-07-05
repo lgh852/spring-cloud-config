@@ -10,3 +10,4 @@ swagger:
   enable: true
 
 rabbit: true 
+test: 3
