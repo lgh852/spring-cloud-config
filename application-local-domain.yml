@@ -27,7 +27,7 @@ spring:
       enabled: ALWAYS # 로그 알록달록 예쁘게 나오게 설정
   rabbitmq:
     host: 127.0.0.1
-    port: 15672
+    port: 5672
     username: guest
     password: guest
   test: 5
