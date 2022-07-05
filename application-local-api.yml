@@ -10,4 +10,5 @@ swagger:
   enable: true
 
 rabbit: true 
-test: 3
+spring:
+  test: 3
