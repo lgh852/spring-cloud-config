@@ -1,0 +1,34 @@
+#domain
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    platform: org.hibernate.dialect.MariaDB103Dialect
+    url: '{cipher}7228123f618a8e0a957836dac4174362649db0219d4ed3011d53e75ad68f4f5ddc0651bbeb29a59f02c06b803dfb8e32667b850388e28fdfdd441f51b765a9eb'
+    username: '{cipher}b5614416933b795117e4ab3e75b51a87a038100244a0f3aa88f75ab610cde716'
+    password: '{cipher}1c12519f730ba90ad0511589a7a56bafab326edf9483c10480e2a766147a7b3d'
+    hikari:
+      minimum-idle: 5
+      max-lifetime: 60000
+      idle-timeout: 45000
+      maximum-pool-size: 70
+      connection-init-sql: SET TIME_ZONE = '+09:00'
+      connection-test-query: SELECT 1
+  output:
+    ansi:
+      enabled: ALWAYS # 로그 알록달록 예쁘게 나오게 설정
+  rabbitmq:
+    host: '{cipher}5f923b3ba0d5676d831c78e459b44d0025e90ec9d8407e86795a7da3f6632181'
+    port: '{cipher}dbf5e1b3e4e0031b448d7aad539546ac9d40d163201093aaa809d97ac7f7d7c2'
+    username: '{cipher}db177f96abbac40d66482c84250e9092453ba00d458b08730135398a85559da3'
+    password: '{cipher}db177f96abbac40d66482c84250e9092453ba00d458b08730135398a85559da3'
+test: 5
+

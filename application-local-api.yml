@@ -1,0 +1,12 @@
+# API
+server:
+  port: 17301
+  servlet:
+    context-path: /api
+
+useSwagger: true
+
+swagger:
+  enable: true
+
+rabbit: true 

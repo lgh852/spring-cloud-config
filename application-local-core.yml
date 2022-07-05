@@ -1,0 +1,17 @@
+
+logging:
+#  config: file:/apps/dkargo/platform/dkargo-mod-be/config/log4j2-local.yml #log4j2.yml 파일의 경로
+  # config: classpath:log4j2-local.yml # resources 하위의 경우
+
+api-log:
+  ignore-security-log: true # default = false, true일 경우에만 security여도 로그 찍음
+  use: true # request, response 로그를 찍는지 여부가 아닌 filtering 여부
+  debug-api: GET /api/debug/*
+  request:
+    max-body-size: 1 MB # request body max size
+    secret-api: # 해당 api의 경우, body 전체를 로그에 안찍음
+    inactive-api: GET /api/webjars/*, GET /api/, GET /api/swagger*, GET /api/code/*, OPTIONS /api/code/*
+  response:
+    max-body-size: 10 KB # response body max size
+    secret-api:
+    inactive-api: GET /api/webjars/*, GET /api/, GET /api/swagger*, GET /api/code/*, OPTIONS /api/code/*
