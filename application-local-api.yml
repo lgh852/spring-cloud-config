@@ -11,4 +11,4 @@ swagger:
 
 rabbit: true 
 spring:
-  test: 777777
+  test: 9999
